@@ -98,6 +98,8 @@ install(){
     ibmcloud target --cf
     echo "N"|ibmcloud cf install
     ibmcloud cf push
+    ibmcloud cf install
+    ibmcloud cf push
     echo "安装完成。"
     echo "生成的随机 UUID：${UUID}"
     echo "生成的随机 WebSocket路径：${WSPATH}"
